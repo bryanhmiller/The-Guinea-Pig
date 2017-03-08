@@ -1,5 +1,6 @@
 var targetDiv = document.getElementById("output-target");
-var pageTitleMouseEvent= document.getElementById("page-title");
+var pageTitleMouseEvent = document.getElementById("page-title");
+var keypressEvent = document.getElementById("keypress-input");
 
 
 // 1. When any section is clicked the output target text should be "You clicked on 
@@ -27,7 +28,12 @@ function pageTitleActionLeave() {
 
 // 4. When you type characters into the input field, the output element should mirror the 
 // text in the input field.
+function typedInput() {
+	console.log(event.target);
+	targetDiv.innerHTML = keypressEvent;
+}
 
+document.body.addEventListener("click", clickedSectionIdentifier);
 pageTitleMouseEvent.addEventListener("mouseenter", pageTitleActionEnter);
 pageTitleMouseEvent.addEventListener("mouseleave", pageTitleActionLeave);
-document.body.addEventListener("click", clickedSectionIdentifier);
+keypressEvent.addEventListener("keyup", typedInput);
