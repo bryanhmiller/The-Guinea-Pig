@@ -36,7 +36,7 @@ function typedInput() {
 // 5. When you click the "Add color" button, the guinea-pig element's text color should 
 // change to blue.
 function colorChange() {
-	targetDiv.innerHTML += event.target.ClassName.add("add-color");
+	targetDiv.innerHTML += targetDiv.classList.add("color-me-blue");
 }
 
 document.body.addEventListener("click", clickedSectionIdentifier);
