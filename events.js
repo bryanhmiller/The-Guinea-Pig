@@ -1,7 +1,7 @@
 var targetDiv = document.getElementById("output-target");
 var pageTitleMouseEvent = document.getElementById("page-title");
 var keyBoardEvent = document.getElementById("keypress-input");
-
+var addColorButton = document.getElementById("add-color");
 
 // 1. When any section is clicked the output target text should be "You clicked on 
 // the {text of the section} section" 
@@ -33,7 +33,14 @@ function typedInput() {
 	targetDiv.innerHTML = "<h1>" + keyBoardEvent.value; + "</h1>";
 }
 
+// 5. When you click the "Add color" button, the guinea-pig element's text color should 
+// change to blue.
+function colorChange() {
+	targetDiv.innerHTML += event.target.ClassName.add("add-color");
+}
+
+document.body.addEventListener("click", clickedSectionIdentifier);
 pageTitleMouseEvent.addEventListener("mouseenter", pageTitleActionEnter);
 pageTitleMouseEvent.addEventListener("mouseleave", pageTitleActionLeave);
 keyBoardEvent.addEventListener("keyup", typedInput);
-document.body.addEventListener("click", clickedSectionIdentifier);
+addColorButton.addEventListener("click", colorChange);
