@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Guinea Pig</title>
+		<link rel="stylesheet" type="text/css" href="./events.css">
+	</head>
+	<body>
+		<header id="page-header">
+<!-- 
+2. When the mouse is over the h1 tag, the output element should contain the text "You moved your mouse over the header".
+3. When the mouse leaves the h1 tag, the output element should contain the text "You left me!!".		 -->
+    		<h1 id="page-title">Page title</h1>
+  		</header>
+
+		<ul>
+		    <li>Unordered list item 1</li>
+		    <li>Unordered list item 2</li>
+			<li>Unordered list item 3</li>
+		</ul>
+
+		<article>
+<!-- 1. When any section is clicked the output target text should be "You clicked on the {text of the section} section" -->
+		    <section class="article-section">Introduction</section>
+		    <section class="article-section">Body</section>
+		    <section class="article-section">Section 1</section>
+		    <section class="article-section">Section 2</section>
+		    <section class="article-section">Section 3</section>
+		    <section class="article-section">Conclusion</section>
+		</article>
+
+<!-- 4. When you type characters into the input field, the output element should mirror the text in the input field. -->
+		<input type="text" id="keypress-input">
+
+		<div id="output-target"></div>
+
+		<div id="guinea-pig">Leave me alone</div>
+<!-- 5. When you click the "Add color" button, the guinea-pig element's text color should change to blue. -->
+		<button id="add-color">Add color</button>
+		<button id="make-large">Hulkify</button>
+		<button id="add-border">Capture it</button>
+		<button id="add-rounding">Rounded</button>	
+		<script type="text/javascript" src="events.js"></script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+	margin: 10px auto;
+	background: black;
+	color: yellow;
+}
+
+.color-me-blue {
+	color: blue;
+}
+
+.hulkify {
+	font-size: 40px;
+}
+
+.borderfy {
+	border: 3px solid red;
+}
+
+.roundify {
+	border-radius: 15px;
+}
+
+/*9. The first section's text should be bold.*/
+section:first-child {
+	font-weight: bolder;
+}
+
+/*10. The last section's text should be bold and italicized.*/
+section:last-child {
+	font-style: italic;
+}
+
+button {
+	display: block;
+	margin: 10px;
+}
