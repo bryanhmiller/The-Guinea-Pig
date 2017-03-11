@@ -1,4 +1,5 @@
 body {
+	margin: 10px auto;
 	background: black;
 	color: yellow;
 }
@@ -17,4 +18,19 @@ body {
 
 .roundify {
 	border-radius: 15px;
+}
+
+/*9. The first section's text should be bold.*/
+section:first-child {
+	font-weight: bolder;
+}
+
+/*10. The last section's text should be bold and italicized.*/
+section:last-child {
+	font-style: italic;
+}
+
+button {
+	display: block;
+	margin: 10px;
 }
