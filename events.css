@@ -6,3 +6,15 @@ body {
 .color-me-blue {
 	color: blue;
 }
+
+.hulkify {
+	font-size: 40px;
+}
+
+.borderfy {
+	border: 3px solid red;
+}
+
+.roundify {
+	border-radius: 15px;
+}

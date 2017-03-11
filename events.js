@@ -2,6 +2,10 @@ var targetDiv = document.getElementById("output-target");
 var pageTitleMouseEvent = document.getElementById("page-title");
 var keyBoardEvent = document.getElementById("keypress-input");
 var addColorButton = document.getElementById("add-color");
+var hulkifyButton = document.getElementById("make-large");
+var borderfyButton = document.getElementById("add-border");
+var roundifyButton = document.getElementById("add-rounding");
+
 
 // 1. When any section is clicked the output target text should be "You clicked on 
 // the {text of the section} section" 
@@ -39,8 +43,21 @@ function colorChange() {
 
 // 6. When you click the "Hulkify" button, the guinea-pig element's font size should become 
 // much larger.
+function hulkifyChange() {
+	targetDiv.classList.add("hulkify");
+}
 
+// 7. When you click the "Capture it" button, the guinea-pig element should have a border 
+// added to it.
+function borderfyChange() {
+	targetDiv.classList.add("borderfy");
+}
 
+// 8. When you click the "Rounded" button, the guinea-pig element's border should become 
+// rounded.
+function roundifyChange() {
+	targetDiv.classList.add("roundify");
+}
 
 
 document.body.addEventListener("click", clickedSectionIdentifier);
@@ -48,3 +65,6 @@ pageTitleMouseEvent.addEventListener("mouseenter", pageTitleActionEnter);
 pageTitleMouseEvent.addEventListener("mouseleave", pageTitleActionLeave);
 keyBoardEvent.addEventListener("keyup", typedInput);
 addColorButton.addEventListener("click", colorChange);
+hulkifyButton.addEventListener("click", hulkifyChange);
+borderfyButton.addEventListener("click", borderfyChange);
+roundifyButton.addEventListener("click", roundifyChange);
